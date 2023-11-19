@@ -25,9 +25,7 @@ const response = await fetch(
     console.log(typeof data);
 
     res.status(200).json({ message: data.text });
-=======
-    res.status(200).json({ message: data });
->>>>>>> 73edba32434a9475bb0e844d9afcbd3cd07947cf
+
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: error.message });
