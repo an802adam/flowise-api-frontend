@@ -24,7 +24,6 @@ const response = await fetch(
     console.log(data);
     console.log(typeof data);
 
-<<<<<<< HEAD
     res.status(200).json({ message: data.text });
 =======
     res.status(200).json({ message: data });
