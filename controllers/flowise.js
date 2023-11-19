@@ -24,7 +24,7 @@ const response = await fetch(
     console.log(data);
     console.log(typeof data);
 
-    res.status(200).json({ message: data });
+    res.status(200).json({ message: data.text });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: error.message });
